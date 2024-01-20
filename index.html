@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+        window.onload = function() {
+            document.getElementById("register").addEventListener("submit", function(event){
+                event.preventDefault()
+                alert("Form submitted");
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="register">
+            <h1>Registration Form</h1>
+            <form id="register" method="post">
+                <label>First Name: </label>
+                <input type="text" name="fname" id="name" placeholder="Enter your First Name">
+                
+                <br><br>
+                
+                <label>Last Name: </label>
+                <input type="text" name="lname" id="name" placeholder="Enter your Last Name">
+                
+                <br><br>
+                
+                <label>Age: </label>
+                <input type="number" name="age" id="name" placeholder="Enter your Age">
+                
+                <br><br>
+                
+                <label>Email ID: </label>
+                <input type="email" name="email" id="name" placeholder="Enter your Personal Mail ID">
+                
+                <br><br>
+                
+                <label>Gender: </label>
+                 &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">Female</span>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input type="radio" name="gender" id="transgender">
+                &nbsp;
+                <span id="transgender">Transgender</span>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input type="radio" name="gender" id="prefer not to say">
+                &nbsp;
+                <span id="prefer not to say">Prefer not to say</span>
+            
+                <br><br>
+            
+                <label>Known Language: </label>
+                
+                &nbsp;&nbsp;&nbsp;
+                
+                <input type="checkbox" name="lang" id="hindi">
+                &nbsp;
+                <span id="hindi">Hindi</span>
+                
+                &nbsp;&nbsp;&nbsp;
+                
+                <input type="checkbox" name="lang" id="english">
+                &nbsp;
+                <span id="english">English</span>
+                
+                &nbsp;&nbsp;&nbsp;
+                
+                <input type="checkbox" name="lang" id="urdu">
+                &nbsp;
+                <span id="urdu">Urdu</span>
+                
+                <br><br>
+
+                <label><input type="checkbox"> I hereby declare that the above information provided is true and correct</label>
+                
+                <br>
+
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+    
+    <br><br><br>
+
+    <!-- footer section starts -->
+    <footer>
+        <p>&copy 2024 Srishti Panda | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends -->
+</body>
+</html>
